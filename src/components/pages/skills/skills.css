@@ -1,0 +1,8 @@
+.skills {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 0rem;
+	background: #1c1c1c;
+	border-radius: 20px;
+}

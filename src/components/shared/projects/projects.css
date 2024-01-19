@@ -1,0 +1,38 @@
+.project {
+	border-start-start-radius: 10px;
+	width: 400px;
+	/* padding: 0rem 1rem 1rem 1rem; */
+	/* background-color: red; */
+}
+
+.thumbnail-container {
+	height: 250px;
+}
+
+.thumbnail-container img {
+	height: 100%;
+	width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.project .name-container {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.project .desc-container {
+	margin-top: 1rem;
+	font-size: 1.2rem;
+}
+
+.project .project-skills {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.project .description-container {
+	padding: 1rem;
+}
