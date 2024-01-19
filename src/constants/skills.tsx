@@ -1,42 +1,13 @@
 import { Skill } from "../ts/propTypes/skillsCardProps.types";
-import { FaReact, FaBootstrap } from "react-icons/fa";
-import { BiLogoRedux } from "react-icons/bi";
+
+import { BiLogoRedux, BiLogoTypescript } from "react-icons/bi";
 import { AiOutlineHtml5, AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3 } from "react-icons/io";
-import { SiTailwindcss } from "react-icons/si";
+import { SiTailwindcss, SiAntdesign, SiMaterialdesign, SiJest, SiSublimetext } from "react-icons/si";
 import { CgIfDesign } from "react-icons/cg";
-import { SiMaterialdesign } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import { AiOutlineApi } from "react-icons/ai";
-import { SiNestjs } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
-import { FaDigitalOcean } from "react-icons/fa";
-import { FaDocker } from "react-icons/fa";
-import { SiKubernetes } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
-import { SiMysql } from "react-icons/si";
-import { GrOracle } from "react-icons/gr";
-import { FaEthereum } from "react-icons/fa";
-import { FaBitcoin } from "react-icons/fa";
-import { LiaEthereum } from "react-icons/lia";
-import { FaHardHat } from "react-icons/fa";
-import { TbCurrencyEthereum } from "react-icons/tb";
-import { SiWeb3Dotjs } from "react-icons/si";
-import { SiIpfs } from "react-icons/si";
-import { SiJest } from "react-icons/si";
-import { SiMocha } from "react-icons/si";
-import { SiCypress } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
-import { BiLogoTypescript } from "react-icons/bi";
-import { SiSolidity } from "react-icons/si";
-import { FaPython } from "react-icons/fa";
-import { TbBrandCpp } from "react-icons/tb";
-import { TbBrandVscode } from "react-icons/tb";
-import { FaGithub } from "react-icons/fa";
-import { FaBitbucket } from "react-icons/fa";
-import { FaGit } from "react-icons/fa";
-import { SiSublimetext } from "react-icons/si";
+import { TbBrandCpp, TbBrandVscode } from "react-icons/tb";
+import { FaGithub, FaBitbucket, FaGit, FaReact, FaBootstrap } from "react-icons/fa";
 
 export const FRONTEND_SKILLS: Skill[] = [
 	{
@@ -45,7 +16,7 @@ export const FRONTEND_SKILLS: Skill[] = [
 	},
 	{
 		icon: () => <BiLogoRedux color="#7248B6" />,
-		label: "Redux"
+		label: "Redux, Redux-Toolkit"
 	},
 	{
 		icon: () => <AiFillHtml5 color="#DC4A25" />,
@@ -68,58 +39,12 @@ export const FRONTEND_SKILLS: Skill[] = [
 		label: "Material UI"
 	},
 	{
+		icon: () => <SiAntdesign color="#37BCF8" />,
+		label: "AntDesign"
+	},
+	{
 		icon: () => <CgIfDesign color="#0CC97E" />,
 		label: "Figma"
-	}
-];
-
-export const BACKEND_SKILLS: Skill[] = [
-	{
-		icon: () => <FaNodeJs color="#39823A" />,
-		label: "NodeJS"
-	},
-	{
-		icon: () => <SiExpress color="#72A760" />,
-		label: "ExpressJS"
-	},
-	{
-		icon: () => <AiOutlineApi color="#B2C7DB" />,
-		label: "REST API"
-	},
-	{
-		icon: () => <SiNestjs color="#EA2845" />,
-		label: "NestJS"
-	},
-	{
-		icon: () => <FaAws color="#FF9900" />,
-		label: "AWS"
-	},
-	{
-		icon: () => <FaDigitalOcean color="#027FFF" />,
-		label: "Digital Ocean"
-	},
-	{
-		icon: () => <FaDocker color="#2491E5" />,
-		label: "Docker"
-	},
-	{
-		icon: () => <SiKubernetes color="#3069DD" />,
-		label: "Kubernetes"
-	}
-];
-
-export const DATABASE_SKILLS: Skill[] = [
-	{
-		icon: () => <SiMongodb color="#3E9838" />,
-		label: "MongoDB"
-	},
-	{
-		icon: () => <SiMysql color="#01718B" />,
-		label: "MySQL"
-	},
-	{
-		icon: () => <GrOracle color="#F91312" />,
-		label: "Oracle"
 	}
 ];
 
@@ -131,37 +56,6 @@ export const TESTING_SKILLS: Skill[] = [
 	{
 		icon: () => <FaReact color="#FC4545" />,
 		label: "RTL"
-	}
-];
-
-export const BlOCKCHAIN_SKILLS: Skill[] = [
-	{
-		icon: () => <FaEthereum color="#658EB5" />,
-		label: "Ethereum"
-	},
-	{
-		icon: () => <FaBitcoin color="#EF8E19" />,
-		label: "Bitcoin"
-	},
-	{
-		icon: () => <LiaEthereum color="#676C93" />,
-		label: "Smart Contracts"
-	},
-	{
-		icon: () => <FaHardHat color="#FFF000" />,
-		label: "Hardhat"
-	},
-	{
-		icon: () => <TbCurrencyEthereum color="#FFF000" />,
-		label: "Ether.js"
-	},
-	{
-		icon: () => <SiWeb3Dotjs color="#D9A22A" />,
-		label: "Web3.js"
-	},
-	{
-		icon: () => <SiIpfs color="#4A9597" />,
-		label: "IPFS"
 	}
 ];
 
@@ -205,8 +99,5 @@ export const DEV_TOOLS_SKILLS: Skill[] = [
 
 export const SKILL_CLASSNAME = {
 	Frontend: "frontend",
-	Backend: "backend",
-	Database: "database",
-	Testing: "testing",
-	Blockchain: "blockchain"
+	Testing: "testing"
 };

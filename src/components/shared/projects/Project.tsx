@@ -1,6 +1,8 @@
 import { FC } from "react";
 import { ProjectProps } from "../../../ts/propTypes/projectProps.types";
 
+import { FaGithub } from "react-icons/fa";
+import { GoLinkExternal } from "react-icons/go";
 import "./projects.css";
 
 const Project: FC<ProjectProps> = ({
@@ -10,6 +12,7 @@ const Project: FC<ProjectProps> = ({
 	skillsRight,
 	is_concept,
 	hyperlink,
+	github,
 	thumbnail
 }: ProjectProps): JSX.Element => {
 	return (
@@ -47,6 +50,24 @@ const Project: FC<ProjectProps> = ({
 					</div>
 				</div>
 			</div>
+			{github && (
+				<div className="action-container">
+					<div className="github">
+						<span>Github</span>
+						<span>
+							<FaGithub />
+						</span>
+					</div>
+					<a className="view" href={github} target="_blank" rel="noopener noreferrer">
+						<div className="view-button">
+							<span className="button-text">View</span>
+							<span className="button-icon">
+								<GoLinkExternal />
+							</span>
+						</div>
+					</a>
+				</div>
+			)}
 		</div>
 	);
 };

@@ -1,6 +1,9 @@
 .project {
 	border-start-start-radius: 10px;
+	border-start-end-radius: 10px;
 	width: 400px;
+	border: 1px solid #2a2a2a;
+
 	/* padding: 0rem 1rem 1rem 1rem; */
 	/* background-color: red; */
 }
@@ -35,4 +38,40 @@
 
 .project .description-container {
 	padding: 1rem;
+}
+
+.project .action-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 15px;
+	font-weight: bold;
+	border-top: 1px solid #2a2a2a;
+	padding: 0.5rem 1rem;
+}
+
+.project .github,
+.project .view {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+.project .view {
+	cursor: pointer;
+}
+
+.project .github:hover,
+.project .view:hover {
+	font-size: 1.03rem;
+}
+
+.project .view .view-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 }
