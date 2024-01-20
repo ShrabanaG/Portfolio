@@ -1,4 +1,4 @@
-import { Avatar } from "../../../assets";
+import { Avatar, MyAvatar } from "../../../assets";
 import "./banner.css";
 
 const About: React.FC = () => {
@@ -6,7 +6,7 @@ const About: React.FC = () => {
 		<div className="banner">
 			<div className="content-container">
 				<div className="avatar-container">
-					<img src={Avatar} />
+					<img src={MyAvatar} />
 				</div>
 				<h1 className="intro">
 					<span>Hey!</span> <span>This</span> <span>is</span> <span>Shrabana</span>

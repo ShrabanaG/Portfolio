@@ -75,3 +75,32 @@
 	justify-content: center;
 	gap: 10px;
 }
+
+/* media query for tab */
+@media screen and (max-width: 900px) {
+	.project {
+		width: 780px;
+	}
+
+	.thumbnail-container {
+		height: 300px;
+	}
+
+	.project .name-container {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.thumbnail-container {
+		height: 200px;
+	}
+
+	.project .name-container {
+		font-size: 1.3rem;
+	}
+
+	.project .desc-container {
+		font-size: 1rem;
+	}
+}

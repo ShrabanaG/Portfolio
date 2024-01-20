@@ -9,3 +9,4 @@ export { default as Gpt3Thumbnail } from "./gpt3-thumbnail.jpeg";
 export { default as ResturantThumbnail } from "./resturant-thumbnail.jpeg";
 export { default as BankThumbnail } from "./bank-thumbnail.jpeg";
 export { default as MemoryGameThumbnail } from "./memory-game-thumbnail.jpeg";
+export { default as MyAvatar } from "./myimage_avatar.jpg";

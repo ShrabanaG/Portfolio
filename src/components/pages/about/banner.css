@@ -88,3 +88,18 @@
 .banner .content-container .tagline span:nth-child(4) {
 	animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
+
+@media screen and (max-width: 480px) {
+	.banner .content-container {
+		margin-top: 2rem;
+		height: 350px;
+	}
+
+	.banner .content-container .intro {
+		font-size: 1.8rem;
+	}
+
+	.banner .content-container .tagline {
+		font-size: 1.6rem;
+	}
+}

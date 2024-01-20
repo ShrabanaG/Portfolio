@@ -78,3 +78,17 @@
 	align-items: center;
 	border-radius: 0px;
 }
+
+@media screen and (max-width: 900px) {
+	.navbar .navbar-container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.navbar .navbar-items {
+		display: none;
+	}
+}

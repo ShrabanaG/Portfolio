@@ -1,46 +1,51 @@
 @import url(https://db.onlinewebfonts.com/c/225646b777438f81ec8400ff378afe2d?family=Houschka+Pro+Medium);
 
 body {
-  margin: 0;
-  font-family: "Houschka Pro Medium";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: black;
-  color: #fff;
+	margin: 0;
+	font-family: "Houschka Pro Medium";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: black;
+	color: #fff;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .mgt-20px {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 .section-header {
-  font-size: 2rem;
-  color: #a9a9a9;
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
+	font-size: 2rem;
+	color: #a9a9a9;
+	letter-spacing: 2px;
+	margin-bottom: 1rem;
 }
 
 .skill-items {
-  margin-top: 1.5rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  font-weight: bold;
+	margin-top: 1.5rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1rem;
+	font-weight: bold;
 }
 
 .skill-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .theme-container {
-  margin-top: 4rem;
+	margin-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+	.section-header {
+		font-size: 1.6rem;
+	}
 }
